@@ -23,7 +23,7 @@ def sendMailToUser(email, subject, messageToBeSent):
 
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()  # start TLS for security
-        s.login(senderEmail, "sample4444")
+        s.login(senderEmail, "") #enter ur email and password
 
         text = message.as_string()
         print('sending notification message')
