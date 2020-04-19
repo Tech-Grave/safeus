@@ -18,7 +18,7 @@ def sendMail(myDB, myCursor, phone, email):
     try:
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()  # start TLS for security
-        s.login("samplehackathonx@gmail.com", "sample4444")
+        s.login("samplehackathonx@gmail.com", "")   # enter ur email and password
         message = otp + " is your verification code for Safeus.\nPlease enter the " \
                         "verification code and login to your account.\n\nIgnore this message if this action was not " \
                         "performed by you. "
