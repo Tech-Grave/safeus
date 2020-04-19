@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeus.SignUpUserController">
+   <children>
+      <AnchorPane layoutX="409.0" layoutY="171.0" prefHeight="395.0" prefWidth="317.0">
+         <children>
+            <TextField fx:id="name" layoutY="2.0" prefHeight="25.0" prefWidth="317.0" promptText="Name" />
+            <TextField fx:id="city" layoutY="69.0" prefHeight="25.0" prefWidth="172.0" promptText="City" />
+            <TextField fx:id="pinCode" layoutX="180.0" layoutY="69.0" prefHeight="25.0" prefWidth="137.0" promptText="PIN Code" />
+            <TextField fx:id="phone" layoutY="104.0" prefHeight="25.0" prefWidth="317.0" promptText="Phone Number (10 digit)" />
+            <PasswordField fx:id="password" layoutY="190.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter Password" />
+            <PasswordField fx:id="confirmPassword" layoutY="224.0" prefHeight="25.0" prefWidth="317.0" promptText="Confirm Password" />
+            <Button fx:id="submit" layoutY="277.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #e6b800;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="verification" layoutX="121.0" layoutY="277.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: #0099e6;" text="Send Verification Code" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="code" layoutX="42.0" layoutY="329.0" prefHeight="25.0" prefWidth="234.0" promptText="Enter Verification Code" />
+            <Button fx:id="confirm" layoutX="91.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #00b33c;" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="-1.0" layoutY="175.0" text="Password" />
+            <TextField fx:id="email" layoutY="138.0" prefHeight="25.0" prefWidth="317.0" promptText="Email ID" />
+            <TextField fx:id="address" layoutX="-1.0" layoutY="36.0" prefHeight="25.0" prefWidth="317.0" promptText="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="59.0" prefHeight="38.0" prefWidth="1134.0" style="-fx-background-color: #99ff66;">
+         <children>
+            <Label layoutX="57.0" layoutY="9.0" text="SignUp as User">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="6.0" layoutY="4.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #99ff66;" />
+            <Button fx:id="back" layoutX="11.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #99ff66;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-1.0" prefHeight="60.0" prefWidth="1134.0" style="-fx-background-color: #00b33c;">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" text="SignUp" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="114.0" layoutY="131.0" text="Enter your details here. Press Submit and then press Send Verification Code to receive a verification code." />
+   </children>
+</AnchorPane>

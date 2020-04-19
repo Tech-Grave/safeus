@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="165.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeus.UpcomingEventsObject">
+   <children>
+      <Label fx:id="shopName" layoutX="22.0" layoutY="13.0" text="shopName" textFill="#0e005e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopType" layoutX="22.0" layoutY="38.0" text="shop type" textFill="#5e5e5e">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="7.0" text="Shop ID:" textFill="#1c00a6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopId" layoutX="720.0" layoutY="7.0" text="shopId" textFill="#3000a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="72.0" text="Incoming Time:" textFill="#007c04">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="72.0" text="Outgoing Time:" textFill="#007c04">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="incomingTime" layoutX="130.0" layoutY="71.0" text="incomingTime" textFill="#dd0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="outgoingTime" layoutX="430.0" layoutY="71.0" text="outgoingTime" textFill="#dd0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="22.0" layoutY="101.0" text="date" textFill="#c68b00">
+         <font>
+            <Font name="Rockwell" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="144.0" text="Status:">
+         <font>
+            <Font name="Nirmala UI" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="73.0" layoutY="144.0" text="status" textFill="#bf000d">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewDetails" layoutX="673.0" layoutY="136.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="115.0" style="-fx-background-color: #e6b800;" text="View Details" textFill="WHITE" />
+   </children>
+</AnchorPane>

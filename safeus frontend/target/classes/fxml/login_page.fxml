@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1134.0" style="-fx-background-color: #99ff66; -fx-border-color: #99ff66;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeus.LoginPageController">
+   <children>
+      <Pane layoutX="-27.0" layoutY="-63.0" prefHeight="235.0" prefWidth="1180.0" rotate="-4.3" style="-fx-background-color: #00b33c;" />
+      <Label layoutX="307.0" layoutY="66.0" text="Welcome to Safeus" textFill="WHITE">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="58.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="409.0" layoutY="231.0" prefHeight="284.0" prefWidth="317.0" style="-fx-background-color: #99ff66;">
+         <children>
+            <HBox prefHeight="19.0" prefWidth="166.0">
+               <children>
+                  <RadioButton fx:id="asUser" mnemonicParsing="false" selected="true" text="As User    ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="as" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="asOwner" mnemonicParsing="false" text="As Owner" toggleGroup="$as">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <TextField fx:id="email" layoutY="64.0" prefHeight="25.0" prefWidth="317.0" promptText="Email ID" />
+            <PasswordField fx:id="password" layoutY="103.0" prefHeight="25.0" prefWidth="317.0" promptText="Password" />
+            <Button fx:id="login" layoutX="104.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #00e600;" text="Login" textFill="WHITE" />
+            <Button fx:id="forgotPassword" layoutX="91.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #99ff66; -fx-font-family: bold;" text="Forgot Password?" textFill="#186800" />
+            <Button fx:id="signUp" layoutX="210.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #99ff66;" text="New? SignUp" textFill="#186800" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="543.0" layoutY="185.0" text="Login">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="373.0" layoutY="218.0" prefHeight="2.0" prefWidth="389.0" style="-fx-background-color: #99ff66;" />
+   </children>
+</AnchorPane>

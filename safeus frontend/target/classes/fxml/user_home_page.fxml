@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeus.HomePageUserController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="1134.0" style="-fx-background-color: #00b33c;">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" text="Safeus" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="38.0" prefWidth="1134.0" style="-fx-background-color: #99ff66;">
+         <children>
+            <HBox layoutX="8.0" layoutY="7.0" prefHeight="25.0" prefWidth="1126.0" style="-fx-background-color: #99ff66;">
+               <children>
+                  <Button fx:id="shopsInMyCity" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #408000;" text="Shops in my city" textFill="WHITE" />
+                  <Label text="    " />
+                  <Button fx:id="shopsNearMe" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #ff751a;" text="Shops near me" textFill="WHITE" />
+                  <Label text="    " />
+                  <ComboBox fx:id="category" prefHeight="25.0" prefWidth="171.0" promptText="Search by category" style="-fx-background-color: #ff99ff;" />
+                  <Label text="                               " />
+                  <TextField fx:id="searchBox" prefHeight="25.0" prefWidth="221.0" promptText="Search shops" />
+                  <Label text="  " />
+                  <Button fx:id="go" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #3399ff;" text="Go" textFill="WHITE" />
+                  <Label text="    " />
+                  <Button fx:id="deactivateAccount" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #7a00cc;" text="Deactivate Account" textFill="WHITE" />
+                  <Label text="    " />
+                  <Button fx:id="logout" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #e62e00;" text="Logout" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="98.0" prefHeight="499.0" prefWidth="1134.0">
+         <children>
+            <AnchorPane prefHeight="499.0" prefWidth="300.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="10.0" text="My Bookings">
+                     <font>
+                        <Font name="MS Reference Specialty" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="viewCurrentBookings" layoutX="32.0" layoutY="59.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="236.0" style="-fx-background-color: #ff9900;" text="View current bookings" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutX="3.0" layoutY="105.0" prefHeight="3.0" prefWidth="295.0" />
+                  <Label layoutX="5.0" layoutY="116.0" text="List of Earlier Bookings">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="5.0" layoutY="140.0" prefHeight="357.0" prefWidth="295.0">
+                     <content>
+                        <VBox fx:id="earlierBookingsPane" prefHeight="355.0" prefWidth="279.0" />
+                     </content></ScrollPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="316.0" layoutY="15.0" text="Search Results">
+               <font>
+                  <Font name="Malgun Gothic" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="314.0" layoutY="42.0" prefHeight="3.0" prefWidth="434.0" />
+            <ScrollPane layoutX="308.0" layoutY="58.0" prefHeight="439.0" prefWidth="562.0">
+               <content>
+                  <VBox fx:id="searchResultPane" prefHeight="437.0" prefWidth="534.0" />
+               </content></ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="869.0" layoutY="96.0" prefHeight="499.0" prefWidth="268.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="165.0" text="Update User Info">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutX="6.0" layoutY="46.0" prefHeight="2.0" prefWidth="254.0" />
+            <TextField fx:id="userName" layoutX="22.0" layoutY="70.0" prefHeight="25.0" prefWidth="221.0" promptText="user Name" />
+            <TextField fx:id="address" layoutX="22.0" layoutY="108.0" prefHeight="25.0" prefWidth="221.0" promptText="address" />
+            <TextField fx:id="city" layoutX="22.0" layoutY="147.0" prefHeight="25.0" prefWidth="221.0" promptText="city" />
+            <TextField fx:id="pinCode" layoutX="22.0" layoutY="186.0" prefHeight="25.0" prefWidth="221.0" promptText="pin" />
+            <TextField fx:id="phone" layoutX="22.0" layoutY="223.0" prefHeight="25.0" prefWidth="221.0" promptText="phone" />
+            <TextField fx:id="email" editable="false" layoutX="22.0" layoutY="261.0" prefHeight="25.0" prefWidth="221.0" promptText="email" />
+            <Button fx:id="save" layoutX="65.0" layoutY="386.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #00aaff;" text="Save" textFill="WHITE" />
+            <Separator layoutX="8.0" layoutY="448.0" prefHeight="2.0" prefWidth="254.0" />
+            <Button fx:id="aboutApp" layoutX="28.0" layoutY="464.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="221.0" style="-fx-background-color: #b37700;" text="About App" textFill="WHITE" />
+            <Label layoutX="9.0" layoutY="429.0" text="Email cannot be changed." textFill="#757575" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
