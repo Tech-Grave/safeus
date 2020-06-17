@@ -55,8 +55,8 @@ import java.net.URI;
 
 public class SafeusDriver extends Application{
 
-	static final int width = 1134 - 10;
-	static final int height = 595 - 10;
+	static final int width = 1124;
+	static final int height = 585;
 	
 	static AnchorPane root;
 	static Scene scene;
